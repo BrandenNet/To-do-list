@@ -1,6 +1,6 @@
 # To-do-list
 
-A simple to do list
+A simple to do list https://to-do-list-brandonn.glitch.me/ 
 
 ![Screenshot 2024-07-18 162931](https://github.com/user-attachments/assets/f95cf456-2515-4518-af35-13834c5b4ac6)
 
@@ -19,11 +19,3 @@ Features to be added:
 
 
 
-
-
-
-
-
-```
-```
-        
