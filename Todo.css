@@ -1,0 +1,141 @@
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.todo-app h2 {
+    color: #002765;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    background: #ff5945;
+    transition: background 0.3s;
+    display: flex;
+}
+
+button:hover {
+    background: #e04b3e;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul li:hover {
+    background: #f9f9f9;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: darkred;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul li {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px 40px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+}
+
+.icon {
+    padding: 3px;
+    height: 35px;
+    width: 35px;
+    color: black;
+}
