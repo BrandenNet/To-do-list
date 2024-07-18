@@ -1,5 +1,8 @@
 # To-do-list
 
-
-$  inputBox.addEventListener("keyup", (event) => {
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
         
